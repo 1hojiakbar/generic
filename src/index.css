@@ -8,7 +8,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
   font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bgColor: #ffffffff;
+  --primary: #1b376c;
+  --secondary: #dbd7d7;
+  --activeColor: #0038ff;
+  --textColor: #00000000;
+  --activeBgColor: #0075ff;
 }
 
 body {

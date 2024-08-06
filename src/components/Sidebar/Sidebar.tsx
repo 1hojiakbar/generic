@@ -1,16 +1,17 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { Container, OutletWrapper, SidebarWrapper } from "./style";
 
 const Sidebar: React.FC = () => {
   return (
-    <div>
-      <div>
+    <Container>
+      <SidebarWrapper>
         <h1>Sidebar</h1>
-      </div>
-      <div>
+      </SidebarWrapper>
+      <OutletWrapper>
         <Outlet />
-      </div>
-    </div>
+      </OutletWrapper>
+    </Container>
   );
 };
 
