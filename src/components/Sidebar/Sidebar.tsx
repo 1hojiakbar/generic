@@ -1,7 +1,9 @@
 import React from "react";
+import SidebarItems from "./Items";
+import Navbar from "../Navbar/Navbar";
+import sidebar from "../../utils/sidebar";
 import { Outlet } from "react-router-dom";
 import { Body, Container, Main, OutletWrapper, SidebarWrapper } from "./style";
-import Navbar from "../Navbar/Navbar";
 
 const Sidebar: React.FC = () => {
   return (
@@ -9,76 +11,11 @@ const Sidebar: React.FC = () => {
       <Navbar />
       <Main>
         <SidebarWrapper>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
+          {/*  */}
+          <div className="w-full py-[25px] bg-white z-50 overflow-y-auto sticky top-0"></div>
+          <SidebarItems items={sidebar} />
+          <div className="w-full py-[25px] bg-white z-50 overflow-y-auto sticky bottom-0"></div>
+          {/*  */}
         </SidebarWrapper>
         <Body>
           <OutletWrapper>
