@@ -14,6 +14,7 @@ export const NavbarWrapper = styled.div`
   justify-content: space-between;
   padding: 0 60px;
   height: 70px;
+  min-height: 70px;
   scrollbar-width: none;
   width: 100%;
   min-width: 100%;

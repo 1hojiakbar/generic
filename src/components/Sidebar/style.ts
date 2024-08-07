@@ -26,6 +26,7 @@ export const SidebarWrapper = styled.div`
   flex-direction: column;
   background: white;
   font-weight: 400;
+  min-width: 230px;
   border-right: 1px solid var(--borderColor);
   .active {
     font-weight: 500;
@@ -83,5 +84,6 @@ export const OutletWrapper = styled.div`
   border: 1.5px solid teal;
   overflow-y: scroll;
   height: 100%;
+  min-height: calc(100vh - 88px);
   background-color: transparent;
 `;

@@ -14,7 +14,7 @@ const Sidebar: React.FC = () => {
           {/*  */}
           <div className="w-full py-[25px] bg-white z-50 overflow-y-auto sticky top-0"></div>
           <SidebarItems items={sidebar} />
-          <div className="w-full py-[25px] bg-white z-50 overflow-y-auto sticky bottom-0"></div>
+          <div className="w-full py-[15px] bg-white z-50 overflow-y-auto sticky bottom-0"></div>
           {/*  */}
         </SidebarWrapper>
         <Body>
