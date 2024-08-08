@@ -32,6 +32,7 @@ export const SidebarWrapper = styled.div`
     font-weight: 500;
     color: var(--activeColor);
     background-color: var(--activeBgColor);
+    user-select: none;
     &:hover {
       background-color: var(--activeBgColor);
     }
@@ -67,6 +68,7 @@ export const SidebarItem = styled(NavLink)`
   font-weight: 500;
   background: transparent;
   &:hover {
+    user-select: none;
     background: var(--hoverItemBg);
   }
 `;

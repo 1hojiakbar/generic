@@ -21,8 +21,8 @@ const Root: React.FC = () => {
           })}
         </Route>
 
-        <Route path="/components/overview" element={<Generics />} />
         <Route path="/" element={<Navigate to="/components/overview" />} />
+        <Route path="/components/overview" element={<Generics />} />
         <Route
           path="/components/"
           element={<Navigate to="/components/overview" />}
