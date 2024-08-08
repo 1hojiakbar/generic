@@ -26,3 +26,15 @@ export const NavbarWrapper = styled.div`
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 `;
+
+export const ItemsWrapper = styled.div`
+  ${flex}
+  ${center}
+  flex-direction: row;
+  text-underline-offset: 8px;
+  gap: 33px;
+  .active {
+    color: var(--activeColor);
+    text-decoration: 1.2px underline var(--activeColor);
+  }
+`;

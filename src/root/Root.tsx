@@ -1,15 +1,16 @@
 import React from "react";
-import sidebar from "../utils/sidebar";
+// import sidebar from "../utils/sidebar";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Generics from "../view/Generics";
+import navbar from "../utils/navbar";
 
 const Root: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<Sidebar />}>
-          {sidebar.map((value) => {
+          {navbar.map((value) => {
             const Element = value.element;
             return (
               <Route
