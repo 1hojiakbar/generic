@@ -1,7 +1,6 @@
 import React from "react";
 import navbar from "../../utils/navbar";
-import { NavLink } from "react-router-dom";
-import { ItemsWrapper } from "./style";
+import { Item, ItemsWrapper } from "./style";
 
 const Items: React.FC = () => {
   return (
@@ -9,9 +8,9 @@ const Items: React.FC = () => {
       {navbar.map((item) => {
         const { id, title, path } = item;
         return (
-          <NavLink key={id} to={path} className="font-[500] decoration-0">
+          <Item key={id} to={path}>
             {title}
-          </NavLink>
+          </Item>
         );
       })}
     </ItemsWrapper>

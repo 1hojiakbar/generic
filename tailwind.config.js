@@ -8,7 +8,7 @@ export default {
         secondary: "#dbd7d7",
         "bg-color": "#ffffffff",
         "active-item-bg": "#0075FF",
-        "active-item-color": "#0038FF",
+        "active-item-color": "#0a4d68",
       },
     },
   },

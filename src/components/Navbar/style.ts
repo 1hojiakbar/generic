@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 const flex = css`
@@ -35,6 +36,15 @@ export const ItemsWrapper = styled.div`
   gap: 33px;
   .active {
     color: var(--activeColor);
+    text-decoration: 1.2px underline var(--activeColor);
+  }
+`;
+
+export const Item = styled(NavLink)`
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--textColor);
+  &:hover {
     text-decoration: 1.2px underline var(--activeColor);
   }
 `;
