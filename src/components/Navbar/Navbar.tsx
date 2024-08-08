@@ -1,10 +1,11 @@
 import React from "react";
 import { NavbarWrapper } from "./style";
+import Logo from "./Logo";
 
 const Navbar: React.FC = () => {
   return (
     <NavbarWrapper>
-      <h1 className="text-primary font-semibold text-[28px]">Generic</h1>
+      <Logo />
     </NavbarWrapper>
   );
 };
