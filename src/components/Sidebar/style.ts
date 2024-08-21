@@ -37,6 +37,9 @@ export const SidebarWrapper = styled.div`
       background-color: var(--activeBgColor);
     }
   }
+  @media (max-width: 850px) {
+    display: none;
+  }
 `;
 
 export const GroupTitle = styled.h3`
@@ -80,12 +83,18 @@ export const Body = styled.div`
   flex-direction: column;
   background: var(--bgColor);
   padding: 10px;
+  min-height: calc(100vh - 88px);
+  border: 1px solid red;
+  @media (max-width: 850px) {
+    width: 100%;
+  }
 `;
 
 export const OutletWrapper = styled.div`
   border: 1.5px solid teal;
+  padding: 18px 0;
   overflow-y: scroll;
-  height: 100%;
+  height: calc(100vh - 88px);
   min-height: calc(100vh - 88px);
   background-color: transparent;
 `;

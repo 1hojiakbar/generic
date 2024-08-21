@@ -32,11 +32,14 @@ export const ItemsWrapper = styled.div`
   ${flex}
   ${center}
   flex-direction: row;
-  text-underline-offset: 8px;
+  text-underline-offset: 10px;
   gap: 33px;
   .active {
     color: var(--activeColor);
     text-decoration: 1.2px underline var(--activeColor);
+  }
+  @media (max-width: 850px) {
+    display: none;
   }
 `;
 

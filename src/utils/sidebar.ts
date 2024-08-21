@@ -1,14 +1,15 @@
 import React from "react";
 import Generics from "../view/Generics";
+import Button from "../components/Button/Button";
 
 export interface SidebarItemType {
-  id: number | string;
+  id: number;
   path?: string;
   title: string;
-  element?: React.FC;
+  element?: React.ReactNode | React.FC;
   group?: boolean;
-  children?: SidebarItemType[];
-  hidden?: boolean;
+  sidebar: boolean;
+  navbar?: boolean;
 }
 
 type SidebarType = SidebarItemType[];
@@ -16,96 +17,133 @@ type SidebarType = SidebarItemType[];
 const sidebar: SidebarType = [
   {
     id: 1,
-    path: "/components/overview",
-    title: "Components Overview",
+    title: "Design",
+    path: "/design",
     element: Generics,
+    sidebar: false,
   },
   {
     id: 2,
-    title: "Basic",
-    group: true,
+    title: "Components",
+    path: "/components/",
+    element: Generics,
+    sidebar: false,
   },
   {
     id: 3,
-    path: "/components/button",
-    title: "Button",
+    title: "Blog",
+    path: "/blog",
     element: Generics,
+    sidebar: false,
   },
   {
     id: 4,
-    path: "/components/typography",
-    title: "Typography",
+    path: "/components/overview",
+    title: "Components Overview",
     element: Generics,
+    sidebar: true,
   },
   {
     id: 5,
-    title: "Layout",
+    title: "Basic",
     group: true,
+    sidebar: true,
   },
   {
     id: 6,
-    path: "/components/divider",
-    title: "Divider",
-    element: Generics,
+    path: "/components/button",
+    title: "Button",
+    element: Button,
+    sidebar: true,
   },
   {
     id: 7,
-    path: "/components/flex",
-    title: "Flex",
+    path: "/components/typography",
+    title: "Typography",
     element: Generics,
+    sidebar: true,
   },
   {
     id: 8,
-    path: "/components/grid",
-    title: "Grid",
-    element: Generics,
+    title: "Layout",
+    group: true,
+    sidebar: true,
   },
-
   {
     id: 9,
-    title: "Navigation",
-    group: true,
+    path: "/components/divider",
+    title: "Divider",
+    element: Generics,
+    sidebar: true,
   },
   {
     id: 10,
-    title: "Anchor",
-    path: "/components/anchor",
+    path: "/components/flex",
+    title: "Flex",
     element: Generics,
+    sidebar: true,
   },
   {
     id: 11,
-    title: "Breadcrumb",
-    path: "/components/breadcrumb",
+    path: "/components/grid",
+    title: "Grid",
     element: Generics,
+    sidebar: true,
   },
+
   {
     id: 12,
-    title: "Dropdown",
-    path: "/components/dropdown",
-    element: Generics,
+    title: "Navigation",
+    group: true,
+    sidebar: true,
   },
   {
     id: 13,
-    title: "Data Entry",
-    group: true,
+    title: "Anchor",
+    path: "/components/anchor",
+    element: Generics,
+    sidebar: true,
   },
   {
     id: 14,
-    title: "AutoComplete",
-    path: "/components/auto-complete",
+    title: "Breadcrumb",
+    path: "/components/breadcrumb",
     element: Generics,
+    sidebar: true,
   },
   {
     id: 15,
-    title: "Cascader",
-    path: "/components/cascader",
+    title: "Dropdown",
+    path: "/components/dropdown",
     element: Generics,
+    sidebar: true,
   },
   {
     id: 16,
+    title: "Data Entry",
+    group: true,
+    sidebar: true,
+  },
+  {
+    id: 17,
+    title: "AutoComplete",
+    path: "/components/auto-complete",
+    element: Generics,
+    sidebar: true,
+  },
+  {
+    id: 18,
+    title: "Cascader",
+    path: "/components/cascader",
+    element: Generics,
+    sidebar: true,
+  },
+  {
+    id: 19,
     title: "Checkbox",
     path: "/components/checkbox",
     element: Generics,
+    sidebar: true,
   },
 ];
 
